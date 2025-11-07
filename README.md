@@ -34,7 +34,7 @@ Connect to EC2 using SSH:
 
 ssh -i your-key.pem ubuntu@your-ec2-public-ip
 
-
+![] (./img/![alt text](<img/screenshot (100).png>))
 
 ---
 
@@ -46,7 +46,7 @@ Click New Repository → name it node-app-cicd
 
 Don’t add any files yet (we will push code from EC2).
 
-
+i[] (./img/![alt text](<img/screenshot (101).png>))
 
 ---
 
@@ -65,6 +65,7 @@ Select Just the push event → Save webhook.
 
 ✅ Now, whenever you push code, Jenkins will automatically get notified.
 
+i[] (./img/![alt text](<img/Screenshot (102).png>))
 
 ---
 
@@ -83,6 +84,7 @@ Password: your GitHub personal access token
 
 Click Save.
 
+i[] (./img/![alt text](<img/Screenshot (103).png>))
 
 
 ---
@@ -102,6 +104,11 @@ Select Git and paste your GitHub repo link
 Choose your credentials (from step 4)
 
 Click Save.
+
+i[] (.![alt text](<img/Screenshot (103).png>)/img/)
+i[] (./img/![alt text](<img/Screenshot (104).png>))
+
+i[] (./img/![alt text](<img/Screenshot (105).png>)) 
 
 
 
@@ -163,7 +170,7 @@ git init
 git add .
 git commit -m "Initial Node app and Jenkinsfile"
 git branch -M main
-git remote add origin https://github.com/your-username/node-app-cicd.git
+git remote add origin https://github.com/prathmesh-pawar-123/node-app-cicd.git
 git push -u origin main
 
 ✅ Jenkins will automatically trigger the build after this push.
@@ -180,6 +187,8 @@ http://<your-ec2-public-ip>:3000
 You should see:
 
 > Node App Deployed using Jenkins CI/CD 🚀
+
+i[] (./img/![alt text](<img/Screenshot (106).png>))
 
 
 
@@ -202,4 +211,3 @@ Built and deployed a Node.js app automatically using a Jenkins CI/CD pipeline
 
 ---
 
-Would you like me to generate this README.md file as a downloadable file (README.md) so you can directly upload it to your GitHub repository?
